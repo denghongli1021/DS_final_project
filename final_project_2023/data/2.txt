@@ -11,4 +11,4 @@ that the tidal friction may not be the primary cause for the evolution of the
 Earth-Moon system. The average dark matter field fluid constant derived from
 Earth-Moon system data is 4.39 x 10^(-22) s^(-1)m^(-1). This model predicts
 that the Mars's rotation is also slowing with the angular acceleration rate
-about -4.38 x 10^(-22) rad s^(-2).
+about -4.38 x 10^(-22) rad s^(-2). comoon
