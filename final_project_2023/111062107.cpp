@@ -106,6 +106,8 @@ public:
     }
 };
 
+Trie tries[1000000];
+Trie tries_reversed[1000000];
 // Utility Func
 
 // string parser: output vector of strings (words) after parsing
@@ -313,7 +315,7 @@ int main(int argc, char* argv[]) {
                 op.push(3);
             }
         }
-        cout << "now is search : " << query << endl;
+        //cout << "now is search : " << query << endl;
         set<string> titles_found;
         vector<vector<string>> titles;
         // Iterate through all files
@@ -410,28 +412,30 @@ int main(int argc, char* argv[]) {
                 //cout << "valid ¡G" << valid << endl;
                 if (valid) {
                     titles.push_back(title);
-                    cout << "file num:" << file << endl;
+                    //cout << "file num:" << file << endl;
                 }
             }
         }
 
         // Output the result to the output file
-        cout << "Query: " << query << endl;
+        //cout << "Query: " << query << endl;
         if (!titles.empty()) {
-            cout << "Titles found: " << endl;
+            //cout << "Titles found: " << endl;
+            outputFile << endl;
             for (const auto& titleList : titles) {
-                for (const auto& t : titleList) {
-                    outputFile << t << " ";
-                    cout << t << " ";
+                for (auto it = titleList.begin(); it != titleList.end(); ++it) {
+                    outputFile << *it;
+                    if (next(it) != titleList.end()) {
+                        outputFile << " ";
+                    }
                 }
                 outputFile << endl;
-                cout << endl;
+                //cout << endl;
             }
         } else {
-            outputFile << "Not Found!" << endl;
-            cout << "Not Found!" << endl;
+            outputFile << "Not Found!";
+            //cout << "Not Found!" << endl;
         }
-        cout << "--------------------------" << endl;
     }
 
     queryFile.close();
