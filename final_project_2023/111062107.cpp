@@ -106,8 +106,9 @@ public:
     }
 };
 
-Trie tries[1000000];
-Trie tries_reversed[1000000];
+Trie tries[10000];
+Trie tries_reversed[10000];
+vector<vector<string>> Titles;
 // Utility Func
 
 // string parser: output vector of strings (words) after parsing
@@ -300,7 +301,51 @@ int main(int argc, char* argv[]) {
         cerr << "Error opening query file: " << query_file_path << endl;
         return 1;
     }
+    Trie trie;
+    Trie trie_reversed;
+    int cnt = 0;
+    for (const auto& file : files) {
+        if (file.size() >= 4 && file.substr(file.size() - 4) == ".txt") { // Ensure that the file name contains at least four characters, including .txt.
+            Trie trie;
+            Trie trie_reversed;
+            // Open the file
+            fstream fi(data_dir + file, ios::in);
 
+            string tmp;
+            // GET TITLENAME
+            vector<string> title,title2,title3,title4;
+            if (getline(fi, tmp)) {
+                // GET TITLENAME WORD ARRAY
+                vector<string> tmp_string = split(tmp, " ");
+                vector<string> reversed_tmp = tmp_string;
+                for (string& str : reversed_tmp) {
+                    reverse(str.begin(), str.end());
+                }
+                title = word_parse(tmp_string, trie);
+                Titles.push_back(title);
+                title2 = word_parse(reversed_tmp , trie_reversed);
+                title3 = word_parse2(tmp_string, trie);
+                title4 = word_parse2(reversed_tmp , trie_reversed);
+            }
+
+            // GET CONTENT LINE BY LINE
+            while (getline(fi, tmp)) {
+                // GET CONTENT WORD VECTOR
+                vector<string> tmp_string = split(tmp, " ");
+                vector<string> reversed_tmp = tmp_string;
+                for (string& str : reversed_tmp) {
+                    reverse(str.begin(), str.end());
+                }
+                // PARSE CONTENT
+                vector<string> content = word_parse2(tmp_string, trie);
+                vector<string> content2 = word_parse2(reversed_tmp, trie_reversed);
+                // ......
+            }
+            tries[cnt] = trie;
+            tries_reversed[cnt] = trie_reversed;
+            cnt ++ ;
+        }
+    }
     string query;
     while (getline(queryFile, query)) {
         queue<int> op;
@@ -319,109 +364,68 @@ int main(int argc, char* argv[]) {
         set<string> titles_found;
         vector<vector<string>> titles;
         // Iterate through all files
-        Trie trie;
-        Trie trie_reversed;
-        for (const auto& file : files) {
-            if (file.size() >= 4 && file.substr(file.size() - 4) == ".txt") { // Ensure that the file name contains at least four characters, including .txt.
-                trie.reset(); // Reset the Trie for each query
-                trie_reversed.reset();
-                // Open the file
-                fstream fi(data_dir + file, ios::in);
 
-                string tmp;
-                // GET TITLENAME
-                vector<string> title,title2,title3,title4;
-                if (getline(fi, tmp)) {
-                    // GET TITLENAME WORD ARRAY
-                    vector<string> tmp_string = split(tmp, " ");
-                    vector<string> reversed_tmp = tmp_string;
-                    for (string& str : reversed_tmp) {
-                        reverse(str.begin(), str.end());
-                    }
-                    title = word_parse(tmp_string, trie);
-                    title2 = word_parse(reversed_tmp , trie_reversed);
-                    title3 = word_parse2(tmp_string, trie);
-                    title4 = word_parse2(reversed_tmp , trie_reversed);
+        // Check if the query is found in the Trie
+        for (int k=0;k<cnt;k++) {
+            string tmmp;
+            bool valid = 0;
+            int i=0;
+            for (i;i<query.size();i++) {
+                if (query[i] == '+' || query[i] == '-' || query[i] == '/') {
+                    break;
                 }
-
-                // GET CONTENT LINE BY LINE
-                while (getline(fi, tmp)) {
-                    // GET CONTENT WORD VECTOR
-                    vector<string> tmp_string = split(tmp, " ");
-                    vector<string> reversed_tmp = tmp_string;
-                    for (string& str : reversed_tmp) {
-                        reverse(str.begin(), str.end());
-                    }
-                    // PARSE CONTENT
-                    vector<string> content = word_parse2(tmp_string, trie);
-                    vector<string> content2 = word_parse2(reversed_tmp, trie_reversed);
-                    // ......
+                else if (query[i] != ' ') {
+                    tmmp = tmmp + query[i];
                 }
-                // CLOSE FILE
-                fi.close();
-                // Check if the query is found in the Trie
-                string tmmp;
-                bool valid = 0;
-                int i=0;
-                for (i;i<query.size();i++) {
-                    if (query[i] == '+' || query[i] == '-' || query[i] == '/') {
-                        break;
-                    }
-                    else if (query[i] != ' ') {
-                        tmmp = tmmp + query[i];
-                    }
-                    else continue;
-                }
-                //cout << "tmmp 1st¡G" << tmmp << endl;
-                valid = calculate(trie,trie_reversed,tmmp);
-                tmmp.clear();
-                queue<int> op_use = op;
-                for (i;i<query.size();i++) {
-                    if (query[i] == '+' || query[i] == '-' || query[i] == '/') {
+                else continue;
+            }
+            //cout << "tmmp 1st¡G" << tmmp << endl;
+            valid = calculate(tries[k],tries_reversed[k],tmmp);
+            tmmp.clear();
+            queue<int> op_use = op;
+            for (i;i<query.size();i++) {
+                if (query[i] == '+' || query[i] == '-' || query[i] == '/') {
 
-                        for (int j=i+2;j<query.size();j++) {
-                            if (query[j] != ' ') {
+                    for (int j=i+2;j<query.size();j++) {
+                        if (query[j] != ' ') {
 
-                                tmmp = tmmp + query[j];
+                            tmmp = tmmp + query[j];
+                        }
+                        if (query[j] == ' '|| j == query.size()-1) {
+                            //cout << "in\n";
+                            bool valid2;
+                            valid2 =  calculate(tries[k],tries_reversed[k],tmmp);
+                            int a = op_use.front();
+                            //cout << "a:" <<a << endl;
+                            op_use.pop();
+                            if (a == 1) {
+                                valid = valid & valid2;
                             }
-                            if (query[j] == ' '|| j == query.size()-1) {
-                                //cout << "in\n";
-                                bool valid2;
-                                valid2 =  calculate(trie,trie_reversed,tmmp);
-                                int a = op_use.front();
-                                //cout << "a:" <<a << endl;
-                                op_use.pop();
-                                if (a == 1) {
-                                    valid = valid & valid2;
-                                }
-                                else if (a == 2) {
-                                    valid = valid | valid2;
-                                }
-                                else if (a == 3) {
-                                    valid = valid & !valid2;
-                                }
-                                //cout << "tmmp" << tmmp << endl;
-                                tmmp.clear();
-                                i = j;
-                                break;
+                            else if (a == 2) {
+                                valid = valid | valid2;
                             }
+                            else if (a == 3) {
+                                valid = valid & !valid2;
+                            }
+                            //cout << "tmmp" << tmmp << endl;
+                            tmmp.clear();
+                            i = j;
+                            break;
                         }
                     }
-                    else continue;
                 }
-                //cout << "valid ¡G" << valid << endl;
-                if (valid) {
-                    titles.push_back(title);
-                    //cout << "file num:" << file << endl;
-                }
+                else continue;
+            }
+            //cout << "valid ¡G" << valid << endl;
+            if (valid) {
+                titles.push_back(Titles[k]);
+                //cout << "file num:" << file << endl;
             }
         }
-
         // Output the result to the output file
         //cout << "Query: " << query << endl;
         if (!titles.empty()) {
             //cout << "Titles found: " << endl;
-            outputFile << endl;
             for (const auto& titleList : titles) {
                 for (auto it = titleList.begin(); it != titleList.end(); ++it) {
                     outputFile << *it;
@@ -433,7 +437,7 @@ int main(int argc, char* argv[]) {
                 //cout << endl;
             }
         } else {
-            outputFile << "Not Found!";
+            outputFile << "Not Found!" << endl;
             //cout << "Not Found!" << endl;
         }
     }
