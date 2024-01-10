@@ -112,7 +112,22 @@ public:
 vector<string> word_parse(vector<string> tmp_string, Trie& trie) {
     vector<string> parse_string;
     for (auto& word : tmp_string) {
+        //transform(word.begin(), word.end(), word.begin(), ::tolower);
         trie.insert(word); // Insert the original word into Trie
+        parse_string.emplace_back(word);
+    }
+    return parse_string;
+}
+vector<string> word_parse2(vector<string> tmp_string, Trie& trie) {
+    vector<string> parse_string;
+    for (auto& word : tmp_string) {
+        // 保留單詞中的英文字母
+        word.erase(std::remove_if(word.begin(), word.end(), [](char c) { return !std::isalpha(c); }), word.end());
+
+        // 轉換為小寫
+        transform(word.begin(), word.end(), word.begin(), ::tolower);
+
+        trie.insert(word); // 將原始單詞插入 Trie
         parse_string.emplace_back(word);
     }
     return parse_string;
@@ -140,6 +155,9 @@ vector<string> split(const string& str, const string& delim) {
 }
 
 // Get all files in the given directory
+bool compare_filenames(const string& a, const string& b) {
+    return stoi(a) < stoi(b);
+}
 vector<string> get_files_in_directory(const string& directory) {
     vector<string> files;
 
@@ -163,11 +181,13 @@ bool calculate (Trie& trie,Trie& trie_reversed,const string& query) {
         //cout << "serch way 1" << endl;
         string tmp;
         for (auto &c : query) {
-            if (c != '"') {
+            if ( ((c >= 'a' && c <= 'z') ||(c >= 'a' && c <= 'z')) ) {
                 tmp = tmp + c;
             }
         }
-        if (trie.search_exactly_word(tmp)) {
+        string tmp2 = tmp;
+        reverse(tmp2.begin(), tmp2.end());
+        if (trie.search_exactly_word(tmp) || trie_reversed.search(tmp2)) {
             return true;
             //titles.push_back(title);
         }
@@ -175,14 +195,19 @@ bool calculate (Trie& trie,Trie& trie_reversed,const string& query) {
             return false;
         }
     }
+    /*
+    Exact Search: “search-word”
+    Eg: we want to search essay with graph, we use query - “graph”
+    */
     else if (query[0] == '*') {
         //cout << "serch way 2" << endl;
         string tmp;
         for (auto &c : query) {
-            if (c != '*') {
+            if (((c >= 'a' && c <= 'z') ||(c >= 'a' && c <= 'z'))) {
                 tmp = tmp + c;
             }
         }
+        reverse(tmp.begin(), tmp.end());
         if (trie_reversed.search(tmp)) {
             return true;
             //titles.push_back(title);
@@ -191,11 +216,15 @@ bool calculate (Trie& trie,Trie& trie_reversed,const string& query) {
             return false;
         }
     }
+    /*
+    Suffix Search: *search-word*
+    Eg: we want to search essay with suffix graph, we use query - *graph*
+    */
     else if (query[0] == '<') {
         //cout << "serch wildcard" << endl;
         string tmp;
         for (auto &c : query) {
-            if (c != '>' && c != '<') {
+            if (((c >= 'a' && c <= 'z') ||(c >= 'a' && c <= 'z')) || c == '*') {
                 tmp = tmp + c;
             }
         }
@@ -207,9 +236,21 @@ bool calculate (Trie& trie,Trie& trie_reversed,const string& query) {
             return false;
         }
     }
+    /*
+    Wildcard Search: <search-pattern>
+    Eg: we want to search essay with word pattern gr*h, we use query - <gr*h>. “*”
+    can be empty, single or multiple characters, so gr*h should match words like graph,
+    growth…etc.
+    */
     else {
         //cout << "serch way 3" << endl;
-        if (trie.search(query)) {
+        string tmp;
+        for (auto &c : query) {
+            if (((c >= 'a' && c <= 'z') ||(c >= 'a' && c <= 'z'))) {
+                tmp = tmp + c;
+            }
+        }
+        if (trie.search(tmp)) {
             return true;
             //titles.push_back(title);
         }
@@ -217,6 +258,10 @@ bool calculate (Trie& trie,Trie& trie_reversed,const string& query) {
             return false;
         }
     }
+    /*
+    Prefix Search: search-word
+    Eg: we want to search essay with prefix graph, we use query - graph
+    */
 }
 
 int main(int argc, char* argv[]) {
@@ -247,7 +292,7 @@ int main(int argc, char* argv[]) {
 
     // Get all files in the data directory
     vector<string> files = get_files_in_directory(data_dir);
-
+    sort(files.begin(), files.end(), compare_filenames);
     ifstream queryFile(query_file_path);
     if (!queryFile.is_open()) {
         cerr << "Error opening query file: " << query_file_path << endl;
@@ -258,13 +303,13 @@ int main(int argc, char* argv[]) {
     while (getline(queryFile, query)) {
         queue<int> op;
         for (int i=0;i<query.size();i++) {
-            if (query[i] == '+') {
+            if (query[i] == '+') { // and
                 op.push(1);
             }
-            else if (query[i] == '/') {
+            else if (query[i] == '/') { // or
                 op.push(2);
             }
-            else if (query[i] == '-') {
+            else if (query[i] == '-') { //xor
                 op.push(3);
             }
         }
@@ -278,13 +323,12 @@ int main(int argc, char* argv[]) {
             if (file.size() >= 4 && file.substr(file.size() - 4) == ".txt") { // Ensure that the file name contains at least four characters, including .txt.
                 trie.reset(); // Reset the Trie for each query
                 trie_reversed.reset();
-
                 // Open the file
                 fstream fi(data_dir + file, ios::in);
 
                 string tmp;
                 // GET TITLENAME
-                vector<string> title,title2;
+                vector<string> title,title2,title3,title4;
                 if (getline(fi, tmp)) {
                     // GET TITLENAME WORD ARRAY
                     vector<string> tmp_string = split(tmp, " ");
@@ -294,6 +338,8 @@ int main(int argc, char* argv[]) {
                     }
                     title = word_parse(tmp_string, trie);
                     title2 = word_parse(reversed_tmp , trie_reversed);
+                    title3 = word_parse2(tmp_string, trie);
+                    title4 = word_parse2(reversed_tmp , trie_reversed);
                 }
 
                 // GET CONTENT LINE BY LINE
@@ -305,8 +351,8 @@ int main(int argc, char* argv[]) {
                         reverse(str.begin(), str.end());
                     }
                     // PARSE CONTENT
-                    vector<string> content = word_parse(tmp_string, trie);
-                    vector<string> content2 = word_parse(reversed_tmp, trie_reversed);
+                    vector<string> content = word_parse2(tmp_string, trie);
+                    vector<string> content2 = word_parse2(reversed_tmp, trie_reversed);
                     // ......
                 }
                 // CLOSE FILE
@@ -324,9 +370,10 @@ int main(int argc, char* argv[]) {
                     }
                     else continue;
                 }
-                cout << "tmmp 1st�G" << tmmp << endl;
+                //cout << "tmmp 1st¡G" << tmmp << endl;
                 valid = calculate(trie,trie_reversed,tmmp);
                 tmmp.clear();
+                queue<int> op_use = op;
                 for (i;i<query.size();i++) {
                     if (query[i] == '+' || query[i] == '-' || query[i] == '/') {
 
@@ -336,10 +383,12 @@ int main(int argc, char* argv[]) {
                                 tmmp = tmmp + query[j];
                             }
                             if (query[j] == ' '|| j == query.size()-1) {
+                                //cout << "in\n";
                                 bool valid2;
                                 valid2 =  calculate(trie,trie_reversed,tmmp);
-                                int a = op.front();
-                                op.pop();
+                                int a = op_use.front();
+                                //cout << "a:" <<a << endl;
+                                op_use.pop();
                                 if (a == 1) {
                                     valid = valid & valid2;
                                 }
@@ -349,7 +398,7 @@ int main(int argc, char* argv[]) {
                                 else if (a == 3) {
                                     valid = valid & !valid2;
                                 }
-                                //cout << "tmmp�G" << tmmp << endl;
+                                //cout << "tmmp" << tmmp << endl;
                                 tmmp.clear();
                                 i = j;
                                 break;
@@ -358,9 +407,10 @@ int main(int argc, char* argv[]) {
                     }
                     else continue;
                 }
-                //cout << "valid �G" << valid << endl;
+                //cout << "valid ¡G" << valid << endl;
                 if (valid) {
                     titles.push_back(title);
+                    cout << "file num:" << file << endl;
                 }
             }
         }
