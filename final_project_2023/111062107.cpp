@@ -62,35 +62,31 @@ public:
         return current->isEndOfWord && current->children.empty(); // Check if the word ends at this node and no more characters after it
     }
 
-    bool search_with_wildcard(const string& pattern) {
-        return wildcardTraverse(pattern, root, 0);
-    }
-
-    bool wildcardTraverse(const string& pattern, TrieNode* current, int index) {
-        if (current == nullptr) {
-            return false;
+    bool wildcard_search(TrieNode* node, const std::string& pattern, size_t index) {
+        if (index == pattern.size()) {
+            return node->isEndOfWord;
         }
 
-        if (index == pattern.length()) {
-            return current->isEndOfWord;
-        }
-
-        char ch = pattern[index];
-
-        if (ch == '*') {
-            for (auto& child : current->children) {
-                if (wildcardTraverse(pattern, child.second, index) || wildcardTraverse(pattern, child.second, index + 1)) {
+        char current_char = pattern[index];
+        if (current_char == '*') {
+            // Handle '*' case
+            for (const auto& child : node->children) {
+                if (wildcard_search(child.second, pattern, index) || (index + 1 < pattern.size() && wildcard_search(node, pattern, index + 1))) {
                     return true;
                 }
             }
-        }
-        else {
-            if (current->children.find(ch) != current->children.end()) {
-                return wildcardTraverse(pattern, current->children[ch], index + 1);
+        } else {
+            // Handle non-'*' case
+            if (node->children.find(current_char) != node->children.end()) {
+                return wildcard_search(node->children[current_char], pattern, index + 1);
             }
         }
 
         return false;
+    }
+
+    bool wildcard_search_trie(const std::string& pattern) {
+        return wildcard_search(this->root, pattern, 0);
     }
 
     void reset() {
@@ -231,7 +227,7 @@ bool calculate (Trie& trie,Trie& trie_reversed,const string& query) {
                 tmp = tmp + c;
             }
         }
-        if (trie.search_with_wildcard(tmp)) {
+        if (trie.wildcard_search_trie(tmp)) {
             return true;
             //titles.push_back(title);
         }
@@ -419,26 +415,27 @@ int main(int argc, char* argv[]) {
             //cout << "valid ¡G" << valid << endl;
             if (valid) {
                 titles.push_back(Titles[k]);
-                //cout << "file num:" << file << endl;
+                ///cout << "file num:" << k << endl;
             }
         }
         // Output the result to the output file
-        //cout << "Query: " << query << endl;
+        ///cout << "Query: " << query << endl;
         if (!titles.empty()) {
-            //cout << "Titles found: " << endl;
+            ///cout << "Titles found: " << endl;
             for (const auto& titleList : titles) {
                 for (auto it = titleList.begin(); it != titleList.end(); ++it) {
                     outputFile << *it;
+                    ///cout << *it;
                     if (next(it) != titleList.end()) {
                         outputFile << " ";
                     }
                 }
                 outputFile << endl;
-                //cout << endl;
+                ///cout << endl;
             }
         } else {
             outputFile << "Not Found!" << endl;
-            //cout << "Not Found!" << endl;
+            ///cout << "Not Found!" << endl;
         }
     }
 

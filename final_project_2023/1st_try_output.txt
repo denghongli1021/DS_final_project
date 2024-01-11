@@ -3012,6 +3012,7 @@ Late-time tails of a Yang-Mills field on Minkowski and Schwarzschild
 Composite Structure and Causality
 Not Found!
 In quest of a generalized Callias index theorem
+Aspects of Electron-Phonon Self-Energy Revealed from Angle-Resolved
 Invariance principle for additive functionals of Markov chains
 Thermally Stimulated Luminescence and Current in new heterocyclic
 Behavioral response to strong aversive stimuli: A neurodynamical model
@@ -4915,19 +4916,29 @@ Fundamental solutions for a class of non-elliptic homogeneous
 On the Origin of Asymmetries in Bilateral Supernova Remnants
 On the Nonexistence of Nontrivial Involutive n-Homomorphisms of
 Algebraic geometry of Gaussian Bayesian networks
+Calculation of prompt diphoton production cross sections at Tevatron and
 Understanding the Flavor Symmetry Breaking and Nucleon Flavor-Spin
+Crystal channeling of LHC forward protons with preserved distribution in
 Rigid subsets of symplectic manifolds
+Multiple Parton Scattering in Nuclei: Quark-quark Scattering
 Lower ground state due to counter-rotating wave interaction in trapped
 Spinor dipolar Bose-Einstein condensates; Classical spin approach
 A Single Trapped Ion as a Time-Dependent Harmonic Oscillator
 Some aspects of the nonperturbative renormalization of the phi^4 model
 Singularity Resolution in Isotropic Loop Quantum Cosmology: Recent
+Hadrons in Medium -- Theory confronts experiment
 A Rigorous Time-Domain Analysis of Full--Wave Electromagnetic Cloaking
+Unravelling the sbottom spin at the CERN LHC
+A practical Seedless Infrared-Safe Cone jet algorithm
+QED x QCD Resummation and Shower/ME Matching for LHC Physics
 The Complexity of HCP in Digraps with Degree Bound Two
 Exactly solvable spin dynamics of an electron coupled to large number of
+Exotic Hadron in Pole-dominated QCD Sum Rules
 The Hourglass - Consequences of Pure Hamiltonian Evolution of a
+A variational formulation of electrodynamics with external sources
 Teleparallel Version of the Stationary Axisymmetric Solutions and their
 Phase structure of a surface model on dynamically triangulated spheres
+Hamilton-Jacobi Fractional Sequential Mechanics
 Gravitational Duality Transformations on (A)dS4
 Crossover behavior in fluids with Coulomb interactions
 Persistent Currents in Superconducting Quantum Interference Devices
@@ -4937,8 +4948,11 @@ Multiscale model of electronic behavior and localization in stretched
 Hamiltonian formalism in Friedmann cosmology and its quantization
 Entropic Measure and Wasserstein Diffusion
 Braiding transformation, entanglement swapping and Berry phase in
+Search for Heavy, Long-Lived Particles that Decay to Photons at CDF II
 Failure of the work-Hamiltonian connection for free energy calculations
+Associated production of the charged Higgs boson and single top quark at
 Oscillation bands of condensates on a ring: Beyond the mean field theory
+Normalized Ricci flow on nonparabolic surfaces
 Lower bounds for the conductivities of correlated quantum systems
 Two-proton radioactivity and three-body decay. III. Integral formulae
 Quantum and Classical Spins on the Spatially Distorted Kagome Lattice:
@@ -14324,8 +14338,7 @@ The IDV source J1128+5925, a new candidate for annual modulation?
 Distribution of the molecular absorption in front of the quasar
 Not Found!
 Using decomposed household food acquisitions as inputs of a Kinetic
-Spectroscopic Properties of Polarons in Strongly Correlated Systems by
-Cosmology from String Theory
+Not Found!
 Not Found!
 Not Found!
 Calculation of prompt diphoton production cross sections at Tevatron and
@@ -22766,7 +22779,15 @@ Vortex-induced topological transition of the bilinear-biquadratic
 A Topological Glass
 A kind of prediction from string phenomenology: extra matter at low
 Test vectors for trilinear forms, when two representations are
+In quest of a generalized Callias index theorem
+Does the present data on B_s - bar B_s mixing rule out a large
+Molecular circuits based on graphene nano-ribbon junctions
+Quantitative Resolution to some "Absolute Discrepancies" in Cancer
 Interference effects in above-threshold ionization from diatomic
+The dynamical Casimir effect in braneworlds
+Dynamical Casimir effect for gravitons in bouncing braneworlds
+3-D Simulations of Ergospheric Disk Driven Poynting Jets
+Nova Geminorum 1912 and the Origin of the Idea of Gravitational Lensing
 Nonequilibrium entropy limiters in lattice Boltzmann methods
 A geometric realization of sl(6,C)
 Construction of initial data for 3+1 numerical relativity
