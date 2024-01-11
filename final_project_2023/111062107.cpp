@@ -71,10 +71,14 @@ public:
         if (current_char == '*') {
             // Handle '*' case
             for (const auto& child : node->children) {
-                if (wildcard_search(child.second, pattern, index) || (index + 1 < pattern.size() && wildcard_search(node, pattern, index + 1))) {
+                // Recursively search for the rest of the pattern
+                if (wildcard_search(child.second, pattern, index) || wildcard_search(child.second, pattern, index + 1)) {
                     return true;
                 }
             }
+
+            // If '*' can match an empty sequence, search without consuming '*'
+            return wildcard_search(node, pattern, index + 1);
         } else {
             // Handle non-'*' case
             if (node->children.find(current_char) != node->children.end()) {
@@ -125,7 +129,7 @@ vector<string> word_parse2(vector<string> tmp_string, Trie& trie) {
 
         // 轉換為小寫
         transform(word.begin(), word.end(), word.begin(), ::tolower);
-
+        //cout << word << endl;
         trie.insert(word); // 將原始單詞插入 Trie
         parse_string.emplace_back(word);
     }
@@ -415,27 +419,27 @@ int main(int argc, char* argv[]) {
             //cout << "valid ¡G" << valid << endl;
             if (valid) {
                 titles.push_back(Titles[k]);
-                cout << "file num:" << k << endl;
+                ///cout << "file num:" << k << endl;
             }
         }
         // Output the result to the output file
-        cout << "Query: " << query << endl;
+        ///cout << "Query: " << query << endl;
         if (!titles.empty()) {
             ///cout << "Titles found: " << endl;
             for (const auto& titleList : titles) {
                 for (auto it = titleList.begin(); it != titleList.end(); ++it) {
                     outputFile << *it;
-                    cout << *it;
+                    ///cout << *it;
                     if (next(it) != titleList.end()) {
                         outputFile << " ";
                     }
                 }
                 outputFile << endl;
-                cout << endl;
+                ///cout << endl;
             }
         } else {
             outputFile << "Not Found!" << endl;
-            cout << "Not Found!" << endl;
+            ///cout << "Not Found!" << endl;
         }
     }
 
