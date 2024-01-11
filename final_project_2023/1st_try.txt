@@ -1,4 +1,3 @@
-<fo*u*ed>
-"type"
-<fo*u*ed> - "type"
-"aspects"
+"graph"
+*composition*
+"graph" / *composition*

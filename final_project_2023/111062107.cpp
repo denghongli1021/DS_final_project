@@ -59,7 +59,7 @@ public:
             }
             current = current->children[ch];
         }
-        return current->isEndOfWord && current->children.empty(); // Check if the word ends at this node and no more characters after it
+        return current->isEndOfWord; // Check if the word ends at this node and no more characters after it
     }
 
     bool wildcard_search(TrieNode* node, const std::string& pattern, size_t index) {
@@ -180,13 +180,13 @@ bool calculate (Trie& trie,Trie& trie_reversed,const string& query) {
         //cout << "serch way 1" << endl;
         string tmp;
         for (auto &c : query) {
-            if ( ((c >= 'a' && c <= 'z') ||(c >= 'a' && c <= 'z')) ) {
+            if ( ((c >= 'a' && c <= 'z')) ) {
                 tmp = tmp + c;
             }
         }
-        string tmp2 = tmp;
-        reverse(tmp2.begin(), tmp2.end());
-        if (trie.search_exactly_word(tmp) || trie_reversed.search(tmp2)) {
+//        string tmp2 = tmp;
+//        reverse(tmp2.begin(), tmp2.end()); || trie_reversed.search(tmp2)
+        if (trie.search_exactly_word(tmp)) {
             return true;
             //titles.push_back(title);
         }
@@ -202,7 +202,7 @@ bool calculate (Trie& trie,Trie& trie_reversed,const string& query) {
         //cout << "serch way 2" << endl;
         string tmp;
         for (auto &c : query) {
-            if (((c >= 'a' && c <= 'z') ||(c >= 'a' && c <= 'z'))) {
+            if (((c >= 'a' && c <= 'z'))) {
                 tmp = tmp + c;
             }
         }
@@ -223,7 +223,7 @@ bool calculate (Trie& trie,Trie& trie_reversed,const string& query) {
         //cout << "serch wildcard" << endl;
         string tmp;
         for (auto &c : query) {
-            if (((c >= 'a' && c <= 'z') ||(c >= 'a' && c <= 'z')) || c == '*') {
+            if (((c >= 'a' && c <= 'z') || c == '*')) {
                 tmp = tmp + c;
             }
         }
@@ -245,7 +245,7 @@ bool calculate (Trie& trie,Trie& trie_reversed,const string& query) {
         //cout << "serch way 3" << endl;
         string tmp;
         for (auto &c : query) {
-            if (((c >= 'a' && c <= 'z') ||(c >= 'a' && c <= 'z'))) {
+            if (((c >= 'a' && c <= 'z') )) {
                 tmp = tmp + c;
             }
         }
@@ -415,27 +415,27 @@ int main(int argc, char* argv[]) {
             //cout << "valid ¡G" << valid << endl;
             if (valid) {
                 titles.push_back(Titles[k]);
-                ///cout << "file num:" << k << endl;
+                cout << "file num:" << k << endl;
             }
         }
         // Output the result to the output file
-        ///cout << "Query: " << query << endl;
+        cout << "Query: " << query << endl;
         if (!titles.empty()) {
             ///cout << "Titles found: " << endl;
             for (const auto& titleList : titles) {
                 for (auto it = titleList.begin(); it != titleList.end(); ++it) {
                     outputFile << *it;
-                    ///cout << *it;
+                    cout << *it;
                     if (next(it) != titleList.end()) {
                         outputFile << " ";
                     }
                 }
                 outputFile << endl;
-                ///cout << endl;
+                cout << endl;
             }
         } else {
             outputFile << "Not Found!" << endl;
-            ///cout << "Not Found!" << endl;
+            cout << "Not Found!" << endl;
         }
     }
 

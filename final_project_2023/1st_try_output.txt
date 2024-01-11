@@ -4035,19 +4035,15 @@ Order of Epitaxial Self-Assembled Quantum Dots: Linear Analysis
 The decomposition method and Maple procedure for finding first integrals
 Energy density for chiral lattice fermions with chemical potential
 Timing and Lensing of the Colliding Bullet Clusters: barely enough time
-Meta-Stable Brane Configuration of Product Gauge Groups
 Vacuum Structure and Potential
 Instanton Liquid at Finite Temperature and Chemical Potential of Quarks
 Eternal inflation and localization on the landscape
 Effective potentials for quasicrystals from ab-initio data
-Supersymmetry breaking metastable vacua in runaway quiver gauge theories
 Discovery of a point-like very-high-energy gamma-ray source in Monoceros
 Solar System Constraints on Gauss-Bonnet Mediated Dark Energy
 Genetic Optimization of Photonic Bandgap Structures
 Potfit: effective potentials from ab-initio data
-Classification of superpotentials
 A schematic model of scattering in PT-symmetric Quantum Mechanics
-Stringy Instantons at Orbifold Singularities
 Automated Generation of Layout and Control for Quantum Circuits
 Fabrication of half metallicity in a ferromagnetic metal
 Random Matrix Theory at Nonzero $\mu$ and $T$
@@ -4055,11 +4051,8 @@ Phonon-mediated decay of an atom in a surface-induced potential
 General asymptotic solutions of the Einstein equations and phase
 AMR simulations of the low T/|W| bar-mode instability of neutron stars
 Torsional oscillations of longitudinally inhomogeneous coronal loops
-The Exact Boundary Condition to Solve the Schrodinger Equation of Many
 Sterile neutrinos at the CNGS
 Thermodynamic Stability - A note on a footnote in Ruelle's book
-Geometrically Engineering the Standard Model: Locally Unfolding Three
-Worldsheet Instantons and Torsion Curves, Part B: Mirror Symmetry
 Disorder screening near the Mott-Anderson transition
 Geometric phase of an atom inside an adiabatic radio frequency potential
 Super Star Cluster Velocity Dispersions and Virial Masses in the M82
@@ -4075,7 +4068,6 @@ On the potential of transit surveys in star clusters: Impact of
 Preferential interaction coefficient for nucleic acids and other
 Analysis of the real estate market in Las Vegas: Bubble, seasonal
 Orthogonality criterion for banishing hydrino states from standard
-d-wave superconductivity from electron-phonon interactions
 Sum-over-states vs quasiparticle pictures of coherent correlation
 Behavioral response to strong aversive stimuli: A neurodynamical model
 Hamiltonian formalism in Friedmann cosmology and its quantization
@@ -4102,19 +4094,15 @@ Order of Epitaxial Self-Assembled Quantum Dots: Linear Analysis
 The decomposition method and Maple procedure for finding first integrals
 Energy density for chiral lattice fermions with chemical potential
 Timing and Lensing of the Colliding Bullet Clusters: barely enough time
-Meta-Stable Brane Configuration of Product Gauge Groups
 Vacuum Structure and Potential
 Instanton Liquid at Finite Temperature and Chemical Potential of Quarks
 Eternal inflation and localization on the landscape
 Effective potentials for quasicrystals from ab-initio data
-Supersymmetry breaking metastable vacua in runaway quiver gauge theories
 Discovery of a point-like very-high-energy gamma-ray source in Monoceros
 Solar System Constraints on Gauss-Bonnet Mediated Dark Energy
 Genetic Optimization of Photonic Bandgap Structures
 Potfit: effective potentials from ab-initio data
-Classification of superpotentials
 A schematic model of scattering in PT-symmetric Quantum Mechanics
-Stringy Instantons at Orbifold Singularities
 Automated Generation of Layout and Control for Quantum Circuits
 Fabrication of half metallicity in a ferromagnetic metal
 Random Matrix Theory at Nonzero $\mu$ and $T$
@@ -4122,11 +4110,8 @@ Phonon-mediated decay of an atom in a surface-induced potential
 General asymptotic solutions of the Einstein equations and phase
 AMR simulations of the low T/|W| bar-mode instability of neutron stars
 Torsional oscillations of longitudinally inhomogeneous coronal loops
-The Exact Boundary Condition to Solve the Schrodinger Equation of Many
 Sterile neutrinos at the CNGS
 Thermodynamic Stability - A note on a footnote in Ruelle's book
-Geometrically Engineering the Standard Model: Locally Unfolding Three
-Worldsheet Instantons and Torsion Curves, Part B: Mirror Symmetry
 Disorder screening near the Mott-Anderson transition
 Geometric phase of an atom inside an adiabatic radio frequency potential
 Super Star Cluster Velocity Dispersions and Virial Masses in the M82
@@ -4142,7 +4127,6 @@ On the potential of transit surveys in star clusters: Impact of
 Preferential interaction coefficient for nucleic acids and other
 Analysis of the real estate market in Las Vegas: Bubble, seasonal
 Orthogonality criterion for banishing hydrino states from standard
-d-wave superconductivity from electron-phonon interactions
 Sum-over-states vs quasiparticle pictures of coherent correlation
 Behavioral response to strong aversive stimuli: A neurodynamical model
 Hamiltonian formalism in Friedmann cosmology and its quantization
@@ -4172,7 +4156,6 @@ Reexamination of spin decoherence in semiconductor quantum dots from
 Theory of polariton mediated Raman scattering in microcavities
 Resonant activation in bistable semiconductor lasers
 Review: Semiconductor Quantum Light Sources
-Molecular circuits based on graphene nano-ribbon junctions
 Efficiency of thin film photocells
 Architecture for Pseudo Acausal Evolvable Embedded Systems
 In quest of a generalized Callias index theorem
@@ -6762,34 +6745,10 @@ A Direct Method for Solving Optimal Switching Problems of
 Mediatic graphs
 Brane World Black Rings
 Test vectors for trilinear forms, when two representations are
-Bosonic characters of atomic Cooper pairs across resonance
-Numerical solution of shock and ramp compression for general material
-A remark on the number of steady states in a multiple futile cycle
 High-spin to low-spin and orbital polarization transitions in
-Half-metallic silicon nanowires
-An online repository of Swift/XRT light curves of GRBs
-Counterflow of electrons in two isolated quantum point contacts
-Circular and non-circular nearly horizon-skimming orbits in Kerr
-Non-perturbative conserving approximations and Luttinger's sum rule
-Leaky modes of a left-handed slab
 Disorder screening near the Mott-Anderson transition
-The Formation of Globular Cluster Systems in Massive Elliptical
-Composite fermion wave functions as conformal field theory correlators
-Three-dimensional effects in "atom diodes": atom-optical devices for
-Detecting and Characterizing Planetary Systems with Transit Timing
-Collective excitations in a magnetically doped quantized Hall
-Current - voltage characteristics of break junctions of high-$T_c$
-Transient behavior of surface plasmon polaritons scattered at a
-Quantifying social group evolution
-The luminous infrared composite Seyfert 2 galaxy NGC 7679 through the [O
-3-D Simulations of Ergospheric Disk Driven Poynting Jets
 Spin solid phases of spin 1 and spin 3/2 antiferromagnets on a cubic
 Structural relaxation around substitutional Cr3+ in MgAl2O4
-Model C critical dynamics of random anisotropy magnets
-Domain wall switching: optimizing the energy landscape
-Jet-disturbed molecular gas near the Seyfert 2 nucleus in M51
-Simultaneous Swift and REM monitoring of the blazar PKS0537-441 in 2005
-Composite Structure and Causality
 Tuning correlation effects with electron-phonon interactions
 Reexamination of spin decoherence in semiconductor quantum dots from
 Extraction of physical laws from joint experimental data
@@ -6803,26 +6762,20 @@ Order of Epitaxial Self-Assembled Quantum Dots: Linear Analysis
 The decomposition method and Maple procedure for finding first integrals
 Energy density for chiral lattice fermions with chemical potential
 Timing and Lensing of the Colliding Bullet Clusters: barely enough time
-Meta-Stable Brane Configuration of Product Gauge Groups
 Vacuum Structure and Potential
 Circular and non-circular nearly horizon-skimming orbits in Kerr
 Instanton Liquid at Finite Temperature and Chemical Potential of Quarks
 Eternal inflation and localization on the landscape
 Evidence for an excitonic insulator phase in 1T-TiSe$_{2}$
 Effective potentials for quasicrystals from ab-initio data
-Supersymmetry breaking metastable vacua in runaway quiver gauge theories
 Discovery of a point-like very-high-energy gamma-ray source in Monoceros
 Solar System Constraints on Gauss-Bonnet Mediated Dark Energy
 Genetic Optimization of Photonic Bandgap Structures
 Potfit: effective potentials from ab-initio data
 Non-Equilibrium Josephson and Andreev Current through Interacting
-Classification of superpotentials
 A schematic model of scattering in PT-symmetric Quantum Mechanics
-Viscosity, Black Holes, and Quantum Field Theory
 2D-MIT as self-doping of a Wigner-Mott insulator
-Stringy Instantons at Orbifold Singularities
 Automated Generation of Layout and Control for Quantum Circuits
-Second Order Perturbative Calculation of Quasinormal Modes of
 Spline Single-Index Prediction Model
 Fabrication of half metallicity in a ferromagnetic metal
 Random Matrix Theory at Nonzero $\mu$ and $T$
@@ -6831,11 +6784,8 @@ Phonon-mediated decay of an atom in a surface-induced potential
 General asymptotic solutions of the Einstein equations and phase
 AMR simulations of the low T/|W| bar-mode instability of neutron stars
 Torsional oscillations of longitudinally inhomogeneous coronal loops
-The Exact Boundary Condition to Solve the Schrodinger Equation of Many
 Sterile neutrinos at the CNGS
 Thermodynamic Stability - A note on a footnote in Ruelle's book
-Geometrically Engineering the Standard Model: Locally Unfolding Three
-Worldsheet Instantons and Torsion Curves, Part B: Mirror Symmetry
 Disorder screening near the Mott-Anderson transition
 Conduction electron spin-lattice relaxation time in the MgB2
 Geometric phase of an atom inside an adiabatic radio frequency potential
@@ -6857,7 +6807,6 @@ Preferential interaction coefficient for nucleic acids and other
 Analysis of the real estate market in Las Vegas: Bubble, seasonal
 Solvability of linear equations within weak mixing sets
 Orthogonality criterion for banishing hydrino states from standard
-d-wave superconductivity from electron-phonon interactions
 A Finite Element framework for computation of protein normal modes and
 Sum-over-states vs quasiparticle pictures of coherent correlation
 Behavioral response to strong aversive stimuli: A neurodynamical model
@@ -6866,11 +6815,9 @@ Hamiltonian formalism in Friedmann cosmology and its quantization
 Rigorous derivation of the mean field Green functions of the two-band
 AKARI Detection of the Infrared-Bright Supernova Remnant B0104-72.3 in
 Two-pion exchange three-nucleon potential: O(q^4) chiral expansion
-$p$-Adic Haar multiresolution analysis
 Coherent control of atomic tunneling
 The Fermionic Density-functional at Feshbach Resonance
 Spin coupling in zigzag Wigner crystals
-Frobenius splitting and geometry of $G$-Schubert varieties
 New Close Binary Systems from the SDSS-I (Data Release Five) and the
 Quantum Auctions
 Photons as quasi-charged particles
@@ -8697,7 +8644,6 @@ Generic character sheaves on disconnected groups and character values
 Measurement of D0-D0bar mixing in D0->Ks pi+ pi- decays
 Magnetohydrodynamic Rebound Shocks of Supernovae
 Interface dynamics of microscopic cavities in water
-The core binary fractions of star clusters from realistic simulations
 AMR simulations of the low T/|W| bar-mode instability of neutron stars
 Kinematic Decoupling of Globular Clusters with Extended
 Dust and gas emission in the prototypical hot core G29.96-0.02 at
@@ -8908,19 +8854,15 @@ Order of Epitaxial Self-Assembled Quantum Dots: Linear Analysis
 The decomposition method and Maple procedure for finding first integrals
 Energy density for chiral lattice fermions with chemical potential
 Timing and Lensing of the Colliding Bullet Clusters: barely enough time
-Meta-Stable Brane Configuration of Product Gauge Groups
 Vacuum Structure and Potential
 Instanton Liquid at Finite Temperature and Chemical Potential of Quarks
 Eternal inflation and localization on the landscape
 Effective potentials for quasicrystals from ab-initio data
-Supersymmetry breaking metastable vacua in runaway quiver gauge theories
 Discovery of a point-like very-high-energy gamma-ray source in Monoceros
 Solar System Constraints on Gauss-Bonnet Mediated Dark Energy
 Genetic Optimization of Photonic Bandgap Structures
 Potfit: effective potentials from ab-initio data
-Classification of superpotentials
 A schematic model of scattering in PT-symmetric Quantum Mechanics
-Stringy Instantons at Orbifold Singularities
 Automated Generation of Layout and Control for Quantum Circuits
 Fabrication of half metallicity in a ferromagnetic metal
 Random Matrix Theory at Nonzero $\mu$ and $T$
@@ -8928,11 +8870,8 @@ Phonon-mediated decay of an atom in a surface-induced potential
 General asymptotic solutions of the Einstein equations and phase
 AMR simulations of the low T/|W| bar-mode instability of neutron stars
 Torsional oscillations of longitudinally inhomogeneous coronal loops
-The Exact Boundary Condition to Solve the Schrodinger Equation of Many
 Sterile neutrinos at the CNGS
 Thermodynamic Stability - A note on a footnote in Ruelle's book
-Geometrically Engineering the Standard Model: Locally Unfolding Three
-Worldsheet Instantons and Torsion Curves, Part B: Mirror Symmetry
 Disorder screening near the Mott-Anderson transition
 Geometric phase of an atom inside an adiabatic radio frequency potential
 Super Star Cluster Velocity Dispersions and Virial Masses in the M82
@@ -8948,7 +8887,6 @@ On the potential of transit surveys in star clusters: Impact of
 Preferential interaction coefficient for nucleic acids and other
 Analysis of the real estate market in Las Vegas: Bubble, seasonal
 Orthogonality criterion for banishing hydrino states from standard
-d-wave superconductivity from electron-phonon interactions
 Sum-over-states vs quasiparticle pictures of coherent correlation
 Behavioral response to strong aversive stimuli: A neurodynamical model
 Hamiltonian formalism in Friedmann cosmology and its quantization
@@ -9416,18 +9354,14 @@ Bosonic characters of atomic Cooper pairs across resonance
 The Spitzer c2d Survey of Large, Nearby, Insterstellar Clouds. IX. The
 ALMA as the ideal probe of the solar chromosphere
 Convergence of the discrete dipole approximation. I. Theoretical
-Scalar radius of the pion and zeros in the form factor
 Astrophysical gyrokinetics: kinetic and fluid turbulent cascades in
 Shaping the Globular Cluster Mass Function by Stellar-Dynamical
 Why there is something rather than nothing (out of everything)?
-Spinor dipolar Bose-Einstein condensates; Classical spin approach
-Nonlinear Dynamics of the Phonon Stimulated Emission in Microwave
 Complexities of Human Promoter Sequences
 Estimation of experimental data redundancy and related statistics
 Effective potentials for quasicrystals from ab-initio data
 Temperature Dependence of the Tensile Properties of Single Walled Carbon
 Star Formation in Galaxies with Large Lower Surface Brightness Disks
-A schematic model of scattering in PT-symmetric Quantum Mechanics
 Isotopic Effects in Nuclear Reactions at Relativistic Energies
 Multi-spectral Observations of Lunar Occultations: I. Resolving The Dust
 Constraints on the Self-Interaction Cross-Section of Dark Matter from
@@ -9441,17 +9375,13 @@ Fluctuation-dissipation relation on a Melde string in a turbulent flow,
 Phonon-mediated decay of an atom in a surface-induced potential
 Torsional oscillations of longitudinally inhomogeneous coronal loops
 The Arctic Circle Revisited
-Metal-insulator transition in the low-dimensional organic conductor
 Shaped angular dependence of the spin transfer torque and microwave
 Ultrasound attenuation of superfluid $^{3}$He in aerogel
 Manipulating the rotational properties of a two-component Bose gas
-Antiferromagnetism-superconductivity competition in electron-doped
 USco1606-1935: An Unusually Wide Low-Mass Triple System?
 The Kilodegree Extremely Little Telescope (KELT): A Small Robotic
 Mass and Temperature of the TWA 7 Debris Disk
 Inapproximability of Maximum Weighted Edge Biclique and Its Applications
-Application of Ewald summations to long-range dispersion forces
-Fractionally charged excitations on frustrated lattices
 Self-diffusion and Interdiffusion in Al80Ni20 Melts: Simulation and
 Crossover behavior in fluids with Coulomb interactions
 Effective conservation of energy and momentum algorithm using switching
@@ -9465,10 +9395,8 @@ White dwarf masses derived from planetary nebulae modelling
 Polarizations of J/psi and psi(2S) Mesons Produced in ppbar Collisions
 Testing String Theory with CMB
 Efficiency of thin film photocells
-Necessary optimality conditions for the calculus of variations on time
 The Boundary Conditions of the Heliosphere: Photoionization Models
 Photoproduction of pi0 omega off protons for E(gamma) < 3 GeV
-Long-range correlation and multifractality in Bach's Inventions pitches
 The tensor part of the Skyrme energy density functional. I. Spherical
 The HELLAS2XMM survey. X. The bolometric output of luminous obscured
 Energy conservation and Onsager's conjecture for the Euler equations
@@ -9477,16 +9405,13 @@ Galaxy morphologies and environment in the Abell 901/902 supercluster
 Spin coupling in zigzag Wigner crystals
 Spectral analysis of Swift long GRBs with known redshift
 Constraints on the Interactions between Dark Matter and Baryons from the
-Quantum Auctions
 The Sloan Digital Sky Survey Quasar Catalog IV. Fifth Data Release
 Compton X-ray and Gamma-ray Emission from Extended Radio Galaxies
-Structure of Strange Dwarfs with Color Superconducting Core
 A binary model for the UV-upturn of elliptical galaxies (MNRAS version)
 A priori estimates for weak solutions of complex Monge-Amp\`ere
 Density oscillation in highly flattened quantum elliptic rings and
 Predicting the frequencies of diverse exo-planetary systems
 Gauge-Higgs Unification and LHC/ILC
-Non-extensive thermodynamics of 1D systems with long-range interaction
 NMR evidence for a strong modulation of the Bose-Einstein Condensate in
 Bibliometric statistical properties of the 100 largest European
 Dielectronic Recombination of Fe XV forming Fe XIV: Laboratory
@@ -9498,11 +9423,9 @@ Recovering galaxy star formation and metallicity histories from spectra
 Search for gravitational-wave bursts in LIGO data from the fourth
 Gibbs fragmentation trees
 Efficient Simulations of Early Structure Formation and Reionization
-Conservation laws for invariant functionals containing compositions
 Displacement of the Sun from the Galactic Plane
 SIM PlanetQuest: The Most Promising Near-Term Technique to Detect, Find
 One-dimensional Brownian particle systems with rank dependent drifts
-Cluster properties from two-particle angular correlations in p+p
 Recurrence analysis of the Portevin-Le Chatelier effect
 Daemons and DAMA: Their Celestial-Mechanics Interrelations
 Evidence for a Massive Protocluster in S255N
@@ -9598,7 +9521,6 @@ New algebraic aspects of perturbative and non-perturbative Quantum Field
 Modeling the Spectral Energy Distribution and Variability of 3C 66A
 HI velocity dispersion in NGC 1058
 Search for Very High Energy Emission from Gamma-Ray Bursts using Milagro
-Evolution of a band insulating phase from a correlated metallic phase
 Lattice Boltzmann inverse kinetic approach for the incompressible
 Diffuse X-ray Emission from the Carina Nebula Observed with Suzaku
 Review: Semiconductor Quantum Light Sources
@@ -12584,7 +12506,6 @@ Model C critical dynamics of random anisotropy magnets
 Partial cubes: structures, characterizations, and constructions
 Placeholder Substructures II: Meta-Fractals, Made of Box-Kites, Fill
 Quantum Field Theory on Curved Backgrounds. II. Spacetime Symmetries
-Injective Morita contexts (revisited)
 Approximate solutions to the Dirichlet problem for harmonic maps between
 Groups with finitely many conjugacy classes and their automorphisms
 Generalized regularly discontinuous solutions of the Einstein equations
@@ -12853,7 +12774,6 @@ Inapproximability of Maximum Weighted Edge Biclique and Its Applications
 A unified approach to SIC-POVMs and MUBs
 Linearisation of finite abelian subgroups of the Cremona group of the
 Continuous interfaces with disorder: Even strong pinning is too weak in
-Number of moduli of irreducible families of plane curves with nodes and
 Reduced and Extended Weak Coupling Limit
 Incommmensurability and unconventional superconductor to insulator
 The First Law for Boosted Kaluza-Klein Black Holes
@@ -13821,10 +13741,8 @@ Anomalous pressure behavior of tangential modes in single-wall carbon
 Construction of Complete Embedded Self-Similar Surfaces under Mean
 Iterated integral and the loop product
 Molecular Synchronization Waves in Arrays of Allosterically Regulated
-Placeholder Substructures II: Meta-Fractals, Made of Box-Kites, Fill
 Why there is something rather than nothing (out of everything)?
 Aspects of Electron-Phonon Self-Energy Revealed from Angle-Resolved
-Placeholder Substructures III: A Bit-String-Driven ''Recipe Theory'' for
 Proper J-holomorphic discs in Stein domains of dimension 2
 Magnetic Fingerprints of sub-100 nm Fe Nanodots
 Effective potentials for quasicrystals from ab-initio data
@@ -13859,7 +13777,6 @@ Maximum solutions of normalized Ricci flows on 4-manifolds
 Quantifying social group evolution
 K_0-theory of n-potents in rings and algebras
 Equation-free implementation of statistical moment closures
-The Sloan Digital Sky Survey Quasar Catalog IV. Fifth Data Release
 Terrestrial and Habitable Planet Formation in Binary and Multi-star
 A priori estimates for weak solutions of complex Monge-Amp\`ere
 A Hierarchical Approach for Dependability Analysis of a Commercial
@@ -13867,7 +13784,6 @@ Nonstationary pattern in unsynchronizable complex networks
 Model C critical dynamics of random anisotropy magnets
 A unified approach to the theory of separately holomorphic mappings
 Lower order terms in the 1-level density for families of holomorphic
-Invariants of Triangular Lie Algebras
 Jet-disturbed molecular gas near the Seyfert 2 nucleus in M51
 Cluster properties from two-particle angular correlations in p+p
 Calculation of prompt diphoton production cross sections at Tevatron and
@@ -20893,9 +20809,7 @@ Lagrangian quantum field theory in momentum picture. IV. Commutation
 Circular and non-circular nearly horizon-skimming orbits in Kerr
 Evidence for an excitonic insulator phase in 1T-TiSe$_{2}$
 Non-Equilibrium Josephson and Andreev Current through Interacting
-Viscosity, Black Holes, and Quantum Field Theory
 2D-MIT as self-doping of a Wigner-Mott insulator
-Second Order Perturbative Calculation of Quasinormal Modes of
 Spline Single-Index Prediction Model
 Influence of Phonon dimensionality on Electron Energy Relaxation
 Conduction electron spin-lattice relaxation time in the MgB2
@@ -20908,8 +20822,6 @@ Solvability of linear equations within weak mixing sets
 A Finite Element framework for computation of protein normal modes and
 Ample subvarieties and rationally connected fibrations
 Rigorous derivation of the mean field Green functions of the two-band
-$p$-Adic Haar multiresolution analysis
-Frobenius splitting and geometry of $G$-Schubert varieties
 Electronic structure of kinetic energy driven superconductors in the
 Kadowaki-Woods Ratio of Strongly Coupled Fermi Liquids
 Information entropic superconducting microcooler
@@ -21415,7 +21327,6 @@ Predicting the frequencies of diverse exo-planetary systems
 Jet-disturbed molecular gas near the Seyfert 2 nucleus in M51
 The transverse proximity effect in spectral hardness on the line of
 FIRST-based survey of Compact Steep Spectrum sources, V.
-Binaries, microquasars and GLAST
 An integral field spectroscopic survey for high redshift damped
 The Sloan Digital Sky Survey Quasar Catalog IV. Fifth Data Release
 9.7 micrometer Silicate Absorption in a Damped Lyman-alpha Absorber at
@@ -22791,8 +22702,6 @@ Nova Geminorum 1912 and the Origin of the Idea of Gravitational Lensing
 Nonequilibrium entropy limiters in lattice Boltzmann methods
 A geometric realization of sl(6,C)
 Construction of initial data for 3+1 numerical relativity
-Hadrons in Medium -- Theory confronts experiment
-Group-theoretical properties of nilpotent modular categories
 A Rigorous Time-Domain Analysis of Full--Wave Electromagnetic Cloaking
 Lattice Boltzmann inverse kinetic approach for the incompressible
 The Colin de Verdi\`ere number and graphs of polytopes
@@ -22801,19 +22710,16 @@ The S-Matrix of AdS/CFT and Yangian Symmetry
 Thermodynamic Stability - A note on a footnote in Ruelle's book
 Testing String Theory with CMB
 Reduced and Extended Weak Coupling Limit
-Nova Geminorum 1912 and the Origin of the Idea of Gravitational Lensing
 Construction of Complete Embedded Self-Similar Surfaces under Mean
 The dynamical Casimir effect in braneworlds
 General System theory, Like-Quantum Semantics and Fuzzy Sets
 Nonequilibrium entropy limiters in lattice Boltzmann methods
 A geometric realization of sl(6,C)
 The transverse proximity effect in spectral hardness on the line of
-Group-theoretical properties of nilpotent modular categories
 A Rigorous Time-Domain Analysis of Full--Wave Electromagnetic Cloaking
 The HARPS search for southern extra-solar planets. X. A m sin i = 11
 The Colin de Verdi\`ere number and graphs of polytopes
 Refuting the Pseudo Attack on the REESSE1+ Cryptosystem
-Binaries, microquasars and GLAST
 Reduced and Extended Weak Coupling Limit
 Driven activation versus thermal activation
 Bounds on Negativity of Superpositions
