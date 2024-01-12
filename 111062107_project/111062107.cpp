@@ -361,7 +361,7 @@ int main(int argc, char* argv[]) {
             }
         }
         //cout << "now is search : " << query << endl;
-        set<string> titles_found;
+        //set<string> titles_found;
         vector<vector<string>> titles;
         // Iterate through all files
 
